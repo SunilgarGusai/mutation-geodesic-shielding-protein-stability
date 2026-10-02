@@ -1,0 +1,11 @@
+metric,value,unit_or_note
+development_mutations,382543,mutations
+development_parents,408,parents
+development_homology_groups,154,groups
+whole_mutation_shielded,147448,mutations
+whole_mutation_shielded_fraction,0.38544,fraction
+shielded_fraction_6A,0.4434,approximately among valid mutations
+shielded_fraction_8A,0.4185,approximately among valid mutations
+shielded_fraction_10A,0.4549,approximately among valid mutations
+shielded_fraction_12A,0.4657,approximately among valid mutations
+mgsc_vs_exact_silence_mismatches,0,all development mutations and prespecified radii
