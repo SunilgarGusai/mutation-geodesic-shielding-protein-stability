@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated article and this software release."
+title: "Mutation Geodesic Shielding Characterizes Residue-Network Susceptibility in Protein Stability"
+type: software
+authors:
+  - family-names: "Gusai"
+    given-names: "Sunilgar Laxmangar"
+    orcid: "https://orcid.org/0009-0004-0739-4812"
+    email: "dr.sunilgargusai@gmail.com"
+  - family-names: "Jadeja"
+    given-names: "Manoharsinh R."
+    orcid: "https://orcid.org/0000-0003-1833-4730"
+repository-code: "https://github.com/SunilgarGusai/mutation-geodesic-shielding-protein-stability"
+license: MIT
+version: 0.1.0
+date-released: 2026-10-02
+keywords:
+  - protein stability
+  - mutation
+  - residue interaction network
+  - shortest paths
+  - geodesic shielding
+  - graph methods
