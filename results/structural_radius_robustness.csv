@@ -1,0 +1,5 @@
+radius_A,valid_variants,median_signed_cosine,median_spearman,median_edge_jaccard,median_CA_RMSD_A
+6,340,0.999,0.9424,1.0,0.123
+8,342,0.99794,0.92363,1.0,0.156
+10,342,0.977,0.8211,0.9787,
+12,342,0.8995,0.6832,0.9781,
