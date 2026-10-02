@@ -1,13 +1,13 @@
 # Publication figures
 
-Final publication figures will be deposited here after manuscript-level consistency checks.
+Quantitative figure panels are regenerated from the frozen machine-readable result tables with `scripts/generate_quantitative_figures.py`. Conceptual study-design and mechanism graphics are part of the author submission bundle.
 
-The main visual sequence is:
+Main visual sequence:
 
 1. Study design and MGSC workflow.
 2. MGSC mechanism and shielding-margin interpretation.
-3. Target-free MGSC characterization and predictive boundary.
+3. Target-free characterization and predictive boundary.
 4. Independent external stability associations.
 5. Explicit-mutant structural credibility and testability boundary.
 
-Conceptual panels are treated separately from quantitative panels; numerical plots must remain data-faithful and reproducible from frozen results.
+Numerical plots remain data-faithful to frozen results. No illustrative or AI-generated numerical panel is used as evidence.
