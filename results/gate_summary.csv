@@ -1,0 +1,6 @@
+analysis,comparison,status,effect,ci95_lower,ci95_upper,note
+locality,M3-LC vs M3-G,not_supported,0.00715,-0.00496,0.01910,positive delta MAE favors local model
+chemical_conditioning,M3-LC vs M3-L,not_supported,0.00988,-0.00470,0.02526,positive delta MAE favors chemical conditioning
+VELE_added_value,M4 vs M2,not_supported,-0.00558,-0.01265,0.00197,MAE_M2 minus MAE_M4
+MGSC_added_information,M2-R+GS3 vs M2-R,not_supported,0.0007915,-0.000274,0.001700,primary grouped HGB test
+explicit_mutant_structural,SC1 plus SC2,inconclusive,,,,only 5 mixed clusters vs prespecified minimum 8
