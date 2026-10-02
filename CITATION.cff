@@ -12,7 +12,7 @@ authors:
     orcid: "https://orcid.org/0000-0003-1833-4730"
 repository-code: "https://github.com/SunilgarGusai/mutation-geodesic-shielding-protein-stability"
 license: MIT
-version: 0.1.0
+version: 1.0.0
 date-released: 2026-10-02
 keywords:
   - protein stability
