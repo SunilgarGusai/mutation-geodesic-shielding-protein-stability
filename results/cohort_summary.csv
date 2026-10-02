@@ -1,0 +1,6 @@
+cohort,source,mutations_or_transitions,parents,homology_or_structural_clusters,role
+development,Tsuboyama Dataset 3,382543,408,154,target-free MGSC validation and grouped development
+protected_development,Tsuboyama Dataset 3 after excluding 25 design-exposed groups,345085,370,129,held-out added-information test
+external_pre_mapping,curated FireProt/PDB resource,2615,90,,sealed external cohort before structural mapping
+external_mapped,curated FireProt/PDB resource,2600,88,,independent H1/S1/H2 after target-free mapping
+Ssym_direct,Ssym experimental paired structures,342,,13,explicit-mutant structural credibility; direct transitions only
