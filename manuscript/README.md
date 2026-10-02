@@ -1,6 +1,4 @@
-# Manuscript
-
-The final revised JCIM-targeted manuscript source and compiled PDF will be placed here after the October 2, 2026 editorial QA pass.
+# Manuscript materials
 
 Locked public title:
 
@@ -9,4 +7,6 @@ Locked public title:
 Corresponding author: **Sunilgar Laxmangar Gusai**  
 Email: **dr.sunilgargusai@gmail.com**
 
-Internal project-number labels are intentionally excluded from all public manuscript filenames.
+The public repository focuses on code, frozen machine-readable result summaries, provenance, claim boundaries, and deterministic figure-regeneration utilities. The compiled submission manuscript, Supporting Information, cover letter, and full LaTeX submission bundle are maintained in the author submission package and will be archived with the article/release when appropriate.
+
+Internal project-number labels are intentionally excluded from public filenames.
