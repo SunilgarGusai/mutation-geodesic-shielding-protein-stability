@@ -1,0 +1,4 @@
+analysis,estimate,ci_lower,ci_upper,n_sites,n_proteins,n_homology_groups,interpretation
+site_level_H1,-1.01107,-1.37692,-0.61688,1245,61,52,"kcal/mol per unit GEO_SUSC; association supported"
+adjusted_specificity_S1,-0.09236,-0.40795,0.16936,1245,61,52,"adjusted association not supported as independent of conventional local environment"
+same_site_H2,0.40151,0.27047,0.74082,103,24,23,"propagation-positive minus shielded substitution mean ddG in kcal/mol"
