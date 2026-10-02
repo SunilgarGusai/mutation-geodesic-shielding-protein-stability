@@ -1,0 +1,12 @@
+claim_id,classification,claim,boundary
+C01,prior_art,Positive-weight shortest paths and bypass routes can shield local perturbations,Do not claim novelty for generic shortest paths or replacement paths
+C02,method_definition,MGSC compares mutation-bypassing and mutation-containing routes under fixed-topology mutation-site reweighting,Core method definition
+C03,derived_identity,d_S(i,j)=min{b(i,j),q_S(i,j)} in the stated fixed-topology formulation,Present as exact identity for this formulation; not as first theorem
+C04,target_free_result,MGSC and direct off-site geodesic silence agree for all 382543 development mutations,Supported implementation verification
+C05,target_free_result,147448 of 382543 mutations are whole-mutation shielded (38.544 percent),Supported prevalence result
+C06,negative_result,GS3 did not meet the primary added-prediction criterion over M2-R,Retain prominently; no robust incremental prediction claim
+C07,external_result,Higher site GEO_SUSC is associated with lower site-mean ddG within external proteins,Association only; not causal
+C08,negative_specificity,Adjusted GEO_SUSC coefficient includes zero after local environment and chemistry adjustment,Do not claim environment-independent information
+C09,external_secondary,Within mixed sites propagation-positive substitutions have mean ddG 0.40151 kcal/mol higher than silent substitutions,Observational within-site contrast
+C10,structural_limitation,Explicit-mutant structural inference is inconclusive because 5 mixed clusters were available vs minimum 8,Descriptive evidence only
+C11,contribution_boundary,Contribution is the specific MGSC formulation plus target-free characterization external associations and transparent negative limits,Avoid first novel unprecedented wording
