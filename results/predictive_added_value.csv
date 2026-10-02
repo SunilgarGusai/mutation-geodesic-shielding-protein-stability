@@ -1,0 +1,9 @@
+analysis,model_or_contrast,estimate,ci_lower,ci_upper,notes
+primary_HGB,M2-R_MAE,0.573765,,,kcal/mol
+primary_HGB,M2-R_plus_GS3_MAE,0.572973,,,kcal/mol
+primary_HGB,MAE_improvement,0.0007915,-0.000274,0.001700,kcal/mol; homology-group bootstrap
+primary_HGB,M2-R_RMSE,0.766212,,,kcal/mol
+primary_HGB,M2-R_plus_GS3_RMSE,0.766107,,,kcal/mol
+primary_HGB,outer_folds_favouring_GS3,4,,,out of 5
+sensitivity_Ridge,MAE_improvement,0.002909,0.001486,0.004310,kcal/mol; sensitivity analysis only
+sensitivity_Ridge,outer_folds_favouring_GS3,5,,,out of 5; not promoted to primary
