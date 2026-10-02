@@ -1,0 +1,15 @@
+result_id,cohort,numerator,denominator,estimate,unit,notes
+whole_mutation_shielding,development,147448,382543,0.38544,fraction,reported as 38.544 percent
+silence_6A,development,,,0.4434,approx_fraction,authoritative audited value
+silence_8A,development,,,0.418549,fraction,
+silence_10A,development,,,0.454882,fraction,
+silence_12A,development,,,0.465681,fraction,
+group_min_prevalence,development,,,0.229219,fraction,154 homology groups
+group_max_prevalence,development,,,0.585106,fraction,154 homology groups
+natural_prevalence,development,,,0.3733015,fraction,descriptive
+de_novo_prevalence,development,,,0.4124707,fraction,descriptive
+H1_GEO_SUSC_beta,external,,,-1.01107,kcal/mol per susceptibility unit,95 percent CI [-1.37692,-0.61688]
+S1_adjusted_beta,external,,,-0.09236,kcal/mol per susceptibility unit,95 percent CI [-0.40795,0.16936]
+H2_same_site_difference,external,,,0.40151,kcal/mol,propagation-positive minus silent; 95 percent CI [0.27047,0.74082]
+SC1_descriptive_cosine,Ssym,,,0.83845,cosine,descriptive 95 percent CI [0.73982,0.92604]
+SC2_descriptive_difference,Ssym,,,0.18347,normalized units,descriptive 95 percent CI [0.14301,0.21625]
