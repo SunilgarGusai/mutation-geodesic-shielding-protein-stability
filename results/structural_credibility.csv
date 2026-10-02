@@ -1,0 +1,8 @@
+metric,value,unit_or_note
+eligible_direct_variants,342,variants
+structural_clusters,13,clusters
+mixed_class_clusters,5,clusters
+prespecified_minimum_mixed_clusters,8,clusters
+equal_cluster_signed_cosine,0.83845,descriptive
+explicit_response_difference,0.18347,descriptive estimate
+confirmatory_status,INCONCLUSIVE,"insufficient mixed-cluster support under prespecified rule"
