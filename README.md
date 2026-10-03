@@ -49,6 +49,10 @@ The study deliberately retains negative and inconclusive evidence:
 
 These boundaries are part of the result, not exceptions hidden from it.
 
+<p align="center">
+  <img src="docs/assets/geodesic-shielding.svg" alt="Conceptual comparison of shielded and geodesically susceptible mutation outcomes" width="92%" />
+</p>
+
 ## Method at a glance
 
 For mutation node \(m\), remove \(m\) to obtain the bypass graph \(H=G-m\). For an off-mutation pair \(i,j\),
