@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="540" viewBox="0 0 1400 540" role="img" aria-labelledby="title desc">
+  <title id="title">MGSC scientific workflow</title>
+  <desc id="desc">Four-stage workflow from local residue graph construction through mutation-geodesic shielding to independent validation.</desc>
+  <defs>
+    <linearGradient id="head" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0b2d49"/><stop offset="1" stop-color="#0e6b70"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="6" stdDeviation="7" flood-color="#0b2238" flood-opacity=".13"/></filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 Z" fill="#7c93a4"/></marker>
+  </defs>
+  <rect width="1400" height="540" rx="24" fill="#f7fbfd"/>
+  <rect x="0" y="0" width="1400" height="72" rx="24" fill="url(#head)"/>
+  <rect x="0" y="48" width="1400" height="24" fill="url(#head)"/>
+  <text x="50" y="45" font-family="Segoe UI,Arial,sans-serif" font-size="28" font-weight="800" fill="#fff">MGSC workflow — local mutation perturbation → geodesic shielding → evidence</text>
+
+  <g filter="url(#shadow)">
+    <rect x="45" y="118" width="290" height="300" rx="22" fill="#eef8ff" stroke="#bed9eb" stroke-width="2"/>
+    <rect x="375" y="118" width="290" height="300" rx="22" fill="#effcf9" stroke="#b9e5dc" stroke-width="2"/>
+    <rect x="705" y="118" width="290" height="300" rx="22" fill="#fff7ed" stroke="#fed7aa" stroke-width="2"/>
+    <rect x="1035" y="118" width="320" height="300" rx="22" fill="#f4f7fb" stroke="#cbd5e1" stroke-width="2"/>
+  </g>
+
+  <text x="70" y="158" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="800" fill="#2563eb">01 · LOCAL GRAPH</text>
+  <text x="70" y="190" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="800" fill="#14364a">Mutation-centered network</text>
+  <g stroke="#7fb2d1" stroke-width="3" fill="#fff">
+    <line x1="105" y1="255" x2="170" y2="220"/><line x1="170" y1="220" x2="245" y2="255"/>
+    <line x1="105" y1="255" x2="155" y2="320"/><line x1="155" y1="320" x2="245" y2="255"/>
+    <line x1="170" y1="220" x2="205" y2="315"/>
+  </g>
+  <circle cx="105" cy="255" r="12" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/>
+  <circle cx="170" cy="220" r="12" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/>
+  <circle cx="245" cy="255" r="12" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/>
+  <circle cx="155" cy="320" r="12" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/>
+  <circle cx="205" cy="315" r="16" fill="#fb923c" stroke="#c2410c" stroke-width="3"/>
+  <text x="205" y="321" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="13" font-weight="800" fill="#fff">m</text>
+  <text x="70" y="375" font-family="Segoe UI,Arial,sans-serif" font-size="15" fill="#3f5565">6 / 8 / 10 / 12 Å local sets</text>
+  <text x="70" y="398" font-family="Segoe UI,Arial,sans-serif" font-size="15" fill="#3f5565">8 Å Cα contact topology · MJ96 costs</text>
+
+  <text x="400" y="158" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="800" fill="#0f766e">02 · ROUTE DECOMPOSITION</text>
+  <text x="400" y="190" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="800" fill="#14364a">Bypass vs mutation route</text>
+  <circle cx="430" cy="285" r="13" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/>
+  <circle cx="610" cy="285" r="13" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/>
+  <path d="M443 280 C485 220, 560 220, 597 280" fill="none" stroke="#14b8a6" stroke-width="8" stroke-linecap="round"/>
+  <path d="M443 292 C485 345, 558 345, 597 292" fill="none" stroke="#fb923c" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="520" cy="330" r="17" fill="#fb923c" stroke="#c2410c" stroke-width="3"/>
+  <text x="520" y="336" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="800" fill="#fff">m</text>
+  <text x="462" y="242" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="700" fill="#0f766e">b(i,j)</text>
+  <text x="539" y="358" font-family="Segoe UI,Arial,sans-serif" font-size="14" font-weight="700" fill="#c2410c">qₛ(i,j)</text>
+  <text x="400" y="392" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="700" fill="#334155">dₛ = min{b, qₛ}</text>
+
+  <text x="730" y="158" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="800" fill="#c2410c">03 · SHIELDING CERTIFICATE</text>
+  <text x="730" y="190" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="800" fill="#14364a">γₛ(i,j) = qₛ − b</text>
+  <g transform="translate(800 220)">
+    <path d="M55 0 L105 18 V63 C105 101 82 126 55 139 C28 126 5 101 5 63 V18 Z" fill="#e6fffb" stroke="#14b8a6" stroke-width="4"/>
+    <path d="M33 68 L49 84 L78 49" fill="none" stroke="#14b8a6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="730" y="380" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="800" fill="#0f766e">γ ≥ 0 · shielded</text>
+  <text x="730" y="404" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="800" fill="#c2410c">γ &lt; 0 · mutation route can dominate</text>
+
+  <text x="1060" y="158" font-family="Segoe UI,Arial,sans-serif" font-size="15" font-weight="800" fill="#475569">04 · EVIDENCE LAYERS</text>
+  <text x="1060" y="190" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="800" fill="#14364a">Characterize, test, validate</text>
+  <g font-family="Segoe UI,Arial,sans-serif">
+    <rect x="1060" y="220" width="265" height="54" rx="14" fill="#e0f2fe"/><text x="1080" y="253" font-size="16" font-weight="700" fill="#0c4a6e">Target-free characterization</text>
+    <rect x="1060" y="286" width="265" height="54" rx="14" fill="#fef3c7"/><text x="1080" y="319" font-size="16" font-weight="700" fill="#92400e">Grouped predictive boundary</text>
+    <rect x="1060" y="352" width="265" height="54" rx="14" fill="#dcfce7"/><text x="1080" y="385" font-size="16" font-weight="700" fill="#166534">Independent stability association</text>
+  </g>
+
+  <line x1="335" y1="268" x2="363" y2="268" stroke="#7c93a4" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="665" y1="268" x2="693" y2="268" stroke="#7c93a4" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="995" y1="268" x2="1023" y2="268" stroke="#7c93a4" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <rect x="45" y="452" width="1310" height="56" rx="18" fill="#0b2d49"/>
+  <text x="700" y="487" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="700" fill="#e6f7fb">Interpretation boundary: network geodesic susceptibility — not thermodynamic energy, causal allostery, or universal ΔΔG superiority</text>
+</svg>
