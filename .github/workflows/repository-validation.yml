@@ -33,6 +33,7 @@ jobs:
           test -f LICENSE
           test -f THIRD_PARTY_LICENSES.md
           test -f requirements.txt
+          test -f pytest.ini
           test -f environment.yml
           test -f REPOSITORY_MANIFEST.csv
           test -f docs/METHOD_PROTOCOL.md
