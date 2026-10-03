@@ -10,6 +10,7 @@ environment/requirements.txt,environment,Mirror dependency specification for leg
 environment/README.md,environment,Public versus author-side environment boundary
 docs/assets/repository-banner.svg,visual,Repository hero banner
 docs/assets/mgsc-workflow.svg,visual,Static MGSC scientific workflow
+docs/assets/mgsc-workflow-animated.svg,visual,Decoratively animated MGSC workflow
 docs/assets/geodesic-shielding.svg,visual,Shielded versus susceptible geodesic concept
 docs/METHOD_PROTOCOL.md,method,Exact public MGSC formulation
 docs/FROZEN_RESULTS.md,results,Headline result inventory and interpretation
