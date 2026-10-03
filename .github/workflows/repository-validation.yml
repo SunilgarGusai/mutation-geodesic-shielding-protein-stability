@@ -1,0 +1,86 @@
+name: Repository verification
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+
+      - name: Install repository dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+
+      - name: Check required reviewer-facing files
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f README.md
+          test -f QUICKSTART.md
+          test -f CITATION.cff
+          test -f LICENSE
+          test -f THIRD_PARTY_LICENSES.md
+          test -f requirements.txt
+          test -f pytest.ini
+          test -f environment.yml
+          test -f REPOSITORY_MANIFEST.csv
+          test -f docs/METHOD_PROTOCOL.md
+          test -f docs/FROZEN_RESULTS.md
+          test -f docs/DATA_PROVENANCE.md
+          test -f docs/REPRODUCIBILITY.md
+          test -f docs/CLAIM_BOUNDARIES.md
+          test -f docs/assets/repository-banner.svg
+          test -f docs/assets/mgsc-workflow.svg
+          test -f docs/assets/mgsc-workflow-animated.svg
+          test -f docs/assets/geodesic-shielding.svg
+          test -f scripts/validate_public_artifact.py
+          test -f scripts/generate_quantitative_figures.py
+          test -f src/mgsc.py
+          test -f src/graph_costs.py
+          test -f tests/test_mgsc_identity.py
+
+      - name: Python syntax check
+        run: |
+          python -m py_compile src/mgsc.py
+          python -m py_compile src/graph_costs.py
+          python -m py_compile scripts/validate_public_artifact.py
+          python -m py_compile scripts/generate_quantitative_figures.py
+          python -m py_compile tests/test_mgsc_identity.py
+
+      - name: Run reference tests
+        run: pytest -q
+
+      - name: Validate curated public artifact
+        run: python scripts/validate_public_artifact.py
+
+      - name: Regenerate quantitative figures
+        run: |
+          python scripts/generate_quantitative_figures.py
+          test -f figures/mgsc_shielding_prevalence.png
+          test -f figures/mgsc_shielding_prevalence.pdf
+          test -f figures/external_stability_effects.png
+          test -f figures/external_stability_effects.pdf
+          test -f figures/structural_credibility_summary.png
+          test -f figures/structural_credibility_summary.pdf
+
+      - name: Summary
+        run: |
+          echo '## MGSC repository verification' >> "$GITHUB_STEP_SUMMARY"
+          echo '- Environment installation: PASS' >> "$GITHUB_STEP_SUMMARY"
+          echo '- Repository structure: PASS' >> "$GITHUB_STEP_SUMMARY"
+          echo '- Python syntax: PASS' >> "$GITHUB_STEP_SUMMARY"
+          echo '- Exact-decomposition tests: PASS' >> "$GITHUB_STEP_SUMMARY"
+          echo '- Frozen numerical invariants: PASS' >> "$GITHUB_STEP_SUMMARY"
+          echo '- Quantitative figure regeneration: PASS' >> "$GITHUB_STEP_SUMMARY"

@@ -1,13 +1,19 @@
-# Publication figures
+# Publication-figure regeneration
 
-Quantitative figure panels are regenerated from the frozen machine-readable result tables with `scripts/generate_quantitative_figures.py`. Conceptual study-design and mechanism graphics are part of the author submission bundle.
+Quantitative repository figures are regenerated from the frozen machine-readable tables in `results/` by:
 
-Main visual sequence:
+```bash
+python scripts/generate_quantitative_figures.py
+```
 
-1. Study design and MGSC workflow.
-2. MGSC mechanism and shielding-margin interpretation.
-3. Target-free characterization and predictive boundary.
-4. Independent external stability associations.
-5. Explicit-mutant structural credibility and testability boundary.
+Generated outputs:
 
-Numerical plots remain data-faithful to frozen results. No illustrative or AI-generated numerical panel is used as evidence.
+- `mgsc_shielding_prevalence.png/.pdf`
+- `external_stability_effects.png/.pdf`
+- `structural_credibility_summary.png/.pdf`
+
+Conceptual repository graphics live under `docs/assets/` and are intentionally separate from numerical evidence.
+
+The journal submission's premium figure artwork is maintained in the private submission package during peer review. The public repository therefore exposes the data-bearing regeneration path without publishing the submitted manuscript package.
+
+No illustrative or AI-generated numerical value is used as evidence.

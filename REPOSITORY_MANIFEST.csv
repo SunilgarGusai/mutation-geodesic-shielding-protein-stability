@@ -1,0 +1,44 @@
+path,category,role
+README.md,landing,Scientific overview and reviewer navigation
+QUICKSTART.md,reproducibility,Minimal reviewer-facing commands
+CITATION.cff,citation,Citation metadata
+LICENSE,licensing,Original-code MIT license
+THIRD_PARTY_LICENSES.md,licensing,Third-party data/software terms
+requirements.txt,environment,Pip dependency specification
+pytest.ini,verification,Pytest repository-root import configuration
+environment.yml,environment,Conda environment specification
+environment/requirements.txt,environment,Mirror dependency specification for legacy path
+environment/README.md,environment,Public versus author-side environment boundary
+docs/assets/repository-banner.svg,visual,Repository hero banner
+docs/assets/mgsc-workflow.svg,visual,Static MGSC scientific workflow
+docs/assets/mgsc-workflow-animated.svg,visual,Decoratively animated MGSC workflow
+docs/assets/geodesic-shielding.svg,visual,Shielded versus susceptible geodesic concept
+docs/METHOD_PROTOCOL.md,method,Exact public MGSC formulation
+docs/FROZEN_RESULTS.md,results,Headline result inventory and interpretation
+docs/DATA_PROVENANCE.md,provenance,Public source lineage
+docs/REPRODUCIBILITY.md,reproducibility,Public versus author-side audit boundary
+docs/CLAIM_BOUNDARIES.md,interpretation,Supported and unsupported scientific claims
+docs/LITERATURE_CONTEXT.md,literature,Prior-art context
+docs/LITERATURE_UPDATE_2026.md,literature,Current literature update
+docs/SUBMISSION_METADATA.md,metadata,Public title author and repository metadata
+manuscript/README.md,metadata,Submission-file exclusion note
+figures/README.md,figures,Quantitative figure regeneration guide
+results/README.md,results,Frozen result-table inventory
+results/mgsc_characterization.csv,results,Target-free cohort and shielding summary
+results/predictive_added_value.csv,results,Protected added-information comparison
+results/external_validation.csv,results,Independent H1 S1 H2 results
+results/structural_credibility.csv,results,Explicit-mutant structural summary
+results/structural_radius_robustness.csv,results,Radius structural robustness summary
+results/structural_cluster_class_counts.csv,results,Structural cluster class counts
+results/parent_origin_shielding_prevalence.csv,results,Parent-origin descriptive prevalence
+results/cohort_summary.csv,results,Cohort inventory
+results/main_results.csv,results,Compact principal result inventory
+results/gate_summary.csv,results,Historical frozen comparison summary
+results/claim_register.csv,results,Machine-readable claim boundary
+src/__init__.py,code,Public package marker
+src/mgsc.py,code,MGSC fixed-topology reference implementation
+src/graph_costs.py,code,Chemical positive path-cost utility
+tests/test_mgsc_identity.py,verification,Direct APSP identity tests
+scripts/validate_public_artifact.py,verification,Manifest and frozen-evidence validator
+scripts/generate_quantitative_figures.py,figures,Deterministic quantitative figure regeneration
+.github/workflows/repository-validation.yml,ci,Automated reviewer-facing verification
