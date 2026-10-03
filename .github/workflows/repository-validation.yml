@@ -42,6 +42,7 @@ jobs:
           test -f docs/CLAIM_BOUNDARIES.md
           test -f docs/assets/repository-banner.svg
           test -f docs/assets/mgsc-workflow.svg
+          test -f docs/assets/mgsc-workflow-animated.svg
           test -f docs/assets/geodesic-shielding.svg
           test -f scripts/validate_public_artifact.py
           test -f scripts/generate_quantitative_figures.py
