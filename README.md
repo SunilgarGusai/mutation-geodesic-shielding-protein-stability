@@ -55,29 +55,29 @@ These boundaries are part of the result, not exceptions hidden from it.
 
 ## Method at a glance
 
-For mutation node \(m\), remove \(m\) to obtain the bypass graph \(H=G-m\). For an off-mutation pair \(i,j\),
+For mutation node $m$, remove $m$ to obtain the bypass graph $H=G-m$. For an off-mutation pair $i,j$,
 
-\[
+$
 b(i,j)=d_H(i,j)
-\]
+$
 
-is the best mutation-bypassing distance. For state \(S\),
+is the best mutation-bypassing distance. For state $S$,
 
-\[
+$
 q_S(i,j)=\min_{u\neq v\in N(m)}
 \left[d_H(i,u)+w_S(u,m)+w_S(m,v)+d_H(v,j)\right]
-\]
+$
 
 is the best route constrained to traverse the mutation node. The fixed-topology decomposition is
 
-\[
+$
 d_S(i,j)=\min\{b(i,j),q_S(i,j)\},
 \qquad
 \gamma_S(i,j)=q_S(i,j)-b(i,j).
-\]
+$
 
-- \(\gamma_S\ge 0\): an equally short or shorter bypass exists — **shielded**.
-- \(\gamma_S<0\): the best mutation-containing route can dominate — **geodesically susceptible**.
+- $\gamma_S\ge 0$: an equally short or shorter bypass exists — **shielded**.
+- $\gamma_S<0$: the best mutation-containing route can dominate — **geodesically susceptible**.
 
 <p align="center">
   <img src="docs/assets/mgsc-workflow-animated.svg" alt="MGSC workflow from local graph construction to shielding certificate and validation evidence" width="100%" />
