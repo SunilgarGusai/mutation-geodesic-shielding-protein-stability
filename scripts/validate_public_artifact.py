@@ -13,6 +13,7 @@ REQUIRED = [
     "LICENSE",
     "THIRD_PARTY_LICENSES.md",
     "requirements.txt",
+    "pytest.ini",
     "environment.yml",
     "REPOSITORY_MANIFEST.csv",
     "docs/METHOD_PROTOCOL.md",
