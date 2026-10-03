@@ -76,8 +76,10 @@ d_S(i,j)=\min\{b(i,j),q_S(i,j)\},
 - \(\gamma_S<0\): the best mutation-containing route can dominate — **geodesically susceptible**.
 
 <p align="center">
-  <img src="docs/assets/mgsc-workflow.svg" alt="MGSC workflow from local graph construction to shielding certificate and validation evidence" width="100%" />
+  <img src="docs/assets/mgsc-workflow-animated.svg" alt="MGSC workflow from local graph construction to shielding certificate and validation evidence" width="100%" />
 </p>
+
+<p align="center"><sub>Animated path highlighting is decorative; the scientific workflow is unchanged. <a href="docs/assets/mgsc-workflow.svg">Open the static high-resolution SVG</a>.</sub></p>
 
 The expensive bypass structure can be reused across the 19 possible substitutions at one residue site because the fixed-topology virtual model changes only mutation-incident edge costs. The study uses this mutation-conditioned saturation view to define site-level geodesic susceptibility.
 
