@@ -5,6 +5,7 @@ CITATION.cff,citation,Citation metadata
 LICENSE,licensing,Original-code MIT license
 THIRD_PARTY_LICENSES.md,licensing,Third-party data/software terms
 requirements.txt,environment,Pip dependency specification
+pytest.ini,verification,Pytest repository-root import configuration
 environment.yml,environment,Conda environment specification
 environment/requirements.txt,environment,Mirror dependency specification for legacy path
 environment/README.md,environment,Public versus author-side environment boundary
