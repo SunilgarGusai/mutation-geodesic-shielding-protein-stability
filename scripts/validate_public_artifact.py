@@ -22,6 +22,7 @@ REQUIRED = [
     "docs/CLAIM_BOUNDARIES.md",
     "docs/assets/repository-banner.svg",
     "docs/assets/mgsc-workflow.svg",
+    "docs/assets/mgsc-workflow-animated.svg",
     "docs/assets/geodesic-shielding.svg",
     "src/mgsc.py",
     "src/graph_costs.py",
