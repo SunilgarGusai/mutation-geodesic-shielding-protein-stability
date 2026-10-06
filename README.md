@@ -13,7 +13,7 @@
   <a href="requirements.txt"><img src="https://img.shields.io/badge/Python-3.13-3776AB.svg?logo=python&logoColor=white" alt="Python 3.13"/></a>
   <a href="CITATION.cff"><img src="https://img.shields.io/badge/citation-CITATION.cff-blue.svg" alt="Citation metadata"/></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/code%20license-MIT-blue.svg" alt="MIT license"/></a>
-  <img src="https://img.shields.io/badge/status-manuscript%20submission-orange.svg" alt="Submission status"/>
+  <img src="https://img.shields.io/badge/status-submission--ready-orange.svg" alt="Submission-ready status"/>
 </p>
 
 <p align="center">
@@ -75,7 +75,7 @@ python scripts/generate_quantitative_figures.py
 
 The same reviewer-facing checks run automatically in GitHub Actions.
 
-> The submitted manuscript PDF/source, Supporting Information, cover letter, and journal-portal files are intentionally excluded from the public repository during peer review.
+> The manuscript PDF/source, Supporting Information, cover letter, and journal-portal files are intentionally excluded from this public reproducibility repository.
 
 ## Reviewer map
 
