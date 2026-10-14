@@ -83,6 +83,13 @@ Interpretation:
 
 This decomposition is exact for the stated graph model. Generic shortest paths and replacement-path ideas are established prior art; the study contribution is the mutation-conditioned protein-network construction and its empirical characterization.
 
+### Domain of the shielding margin when the bypass graph is disconnected
+
+The identity `d_S(i,j)=min{b(i,j),q_S(i,j)}` remains valid when `b(i,j)=+infinity`.
+However, `gamma_S=q_S-b` and the gamma-based response difference must **not** be used if the bypass distance is infinite. For such a pair reachable through the mutation node, use `d_S(i,j)=q_S(i,j)` and calculate the mutation response directly as `q_B(i,j)-q_A(i,j)`. Pairs unreachable in both states are excluded from finite-distance response analysis. The reference implementation already represents the undefined margin as `NaN` and computes responses from the decomposed distance matrices.
+
+This is a mathematical-domain and test-coverage clarification, not a change to the frozen cohort, graph, tolerance, endpoint, or numerical results.
+
 ## 5. Mutation response and whole-mutation silence
 
 For WT state $A$ and mutant state $B$, off-site distance response is
