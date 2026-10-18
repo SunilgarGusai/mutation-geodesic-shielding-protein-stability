@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/assets/repository-banner.svg" alt="Mutation Geodesic Shielding for Protein Stability" width="100%" />
+  <img src="docs/assets/repository-banner.gif" alt="Mutation Geodesic Shielding for Protein Stability" width="100%" />
 </p>
 
 <h1 align="center">Mutation Geodesic Shielding for Protein Stability</h1>

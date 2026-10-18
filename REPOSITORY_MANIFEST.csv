@@ -42,3 +42,5 @@ tests/test_mgsc_identity.py,verification,Direct APSP identity tests
 scripts/validate_public_artifact.py,verification,Manifest and frozen-evidence validator
 scripts/generate_quantitative_figures.py,figures,Deterministic quantitative figure regeneration
 .github/workflows/repository-validation.yml,ci,Automated reviewer-facing verification
+.github/workflows/render-repository-banner.yml,ci,Reproducible export of animated repository artwork
+docs/assets/repository-banner.gif,docs,Animated visual cover generated from SVG master
